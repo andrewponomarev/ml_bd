@@ -8,9 +8,9 @@ docker-compose -f block_1/docker-hadoop/docker-compose.yml up
 
 Resource manager http://localhost:8089/cluster/apps/RUNNING
 
-1. [Скрины поднятого кластера](/1_images)
+1. [Скрины поднятого кластера](1_images/)
 
-2. [Команды](/2_commands)
+2. [Команды](2_commands/)
 
 3. Map-reduce
 
