@@ -7,6 +7,5 @@
 - [Hue](block_1/hue.png)
 - [DataSpell](block_1/dataspell.png)
 
-<h4>Блок 2</h4>
-[Блок 2](block_2)
+<h4>[Блок 2](block_2/)</h4>
 
