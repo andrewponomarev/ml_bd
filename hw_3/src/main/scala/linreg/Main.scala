@@ -1,17 +1,9 @@
 package linreg
 
-import java.io.{File, FileNotFoundException}
-import java.util.Properties
+import java.io.File
 
-import com.typesafe.scalalogging.Logger
-import breeze._
-import breeze.linalg.{*, DenseMatrix, DenseVector, csvread, csvwrite, inv, norm, sum}
-import breeze.numerics.round
+import breeze.linalg.{*, DenseMatrix, DenseVector, csvread, csvwrite, norm}
 import breeze.stats.mean
-
-import scala.io.Source
-import scala.reflect.internal.util.NoSourceFile.path
-import scala.util.Random
 
 
 
@@ -35,7 +27,6 @@ object Main extends App {
   println("write linear regression results")
   val f = getOrCreateFile(predictPath)
   csvwrite(f, predictions.asDenseMatrix.t)
-
 
   def getOrCreateFile(path: String): File = {
     val f = new File(path)
